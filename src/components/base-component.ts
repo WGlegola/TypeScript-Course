@@ -23,8 +23,10 @@ export abstract class Component<T extends HTMLElement, U extends HTMLElement> {
     if (newElementId) {
       this.element.id = newElementId;
     }
+
     this.attach(insertAtStart);
   }
+
   private attach(insertAtBeginning: boolean) {
     this.hostElement.insertAdjacentElement(
       insertAtBeginning ? "afterbegin" : "beforeend",

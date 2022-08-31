@@ -1,7 +1,7 @@
-import { ProjectStatus } from "../models/project";
-import { projectState } from "../state/project-state";
-import { Component } from "./base-component";
-import { ProjectItem } from "./project-item";
+import { ProjectStatus } from "../models/project.js";
+import { projectState } from "../state/project-state.js";
+import { Component } from "./base-component.js";
+import { ProjectItem } from "./project-item.js";
 export class ProjectList extends Component {
     constructor(type) {
         super("project-list", "app", false, `${type}-projects`);
